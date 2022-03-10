@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 export const CardContent = ({initialValue}) => {
   const [count, setCount] = useState(initialValue);
 
-  const addOrSomething = () => {
+  const addOrSomething = async () => {
     if ((count - 1) <= 0) {
       return alert("'THAT'S NOT RIGHT")
     }

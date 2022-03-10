@@ -1,6 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
 
+//Exercises
+import ParentComponent from './exercises/componentsCallback/ParentComponent';
+
 import { CardContent } from './components/card/cardContent.js';
 
 const CardTitle = ({ title }) => <span>{title}</span>;
@@ -15,13 +18,14 @@ const Card = ({ object }) => {
 };
 
 const App = () => {
-  const item = {
-    title: "🚀",
-    subtitle: "b",
-  };
+  // const item = {
+  //   title: "🚀",
+  //   subtitle: "b",
+  // };
   return (
     <div className="App">
-      <Card object={item} />
+      <ParentComponent />
+      {/* <Card object={item} /> */}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
