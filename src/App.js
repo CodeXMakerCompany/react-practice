@@ -7,6 +7,8 @@ import ParentComponent from "./exercises/componentsCallback/ParentComponent";
 import { CardContent } from "./components/card/cardContent.js";
 import ContextExercise from "./exercises/useContext";
 
+import ReactListButton from "./interviewExercises/reactListButton";
+
 const CardTitle = ({ title }) => <span>{title}</span>;
 
 const Card = ({ object }) => {
@@ -30,6 +32,8 @@ const App = () => {
       <hr />
       <hr />
       <ContextExercise />
+      <hr />
+      <ReactListButton />
       <hr />
       {/* <Card object={item} /> */}
       <header className="App-header">
