@@ -8,6 +8,7 @@ import { CardContent } from "./components/card/cardContent.js";
 import ContextExercise from "./exercises/useContext";
 
 import ReactListButton from "./interviewExercises/reactListButton";
+import ReactFileUpload from "./interviewExercises/reactFileUpload";
 
 const CardTitle = ({ title }) => <span>{title}</span>;
 
@@ -27,6 +28,8 @@ const App = () => {
   // };
   return (
     <div className="App">
+      <hr />
+      <ReactFileUpload />
       <hr />
       <ParentComponent />
       <hr />
